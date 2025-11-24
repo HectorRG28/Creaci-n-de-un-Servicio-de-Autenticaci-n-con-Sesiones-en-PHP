@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Bienvenido</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; background-color: #e6ffe6; }
+        .header { background-color: #4CAF50; color: white; padding: 15px; border-radius: 5px 5px 0 0; }
+        .content { background-color: #fff; padding: 20px; border-radius: 0 0 8px 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+        .logout-link { display: block; margin-top: 20px; color: #d9534f; text-decoration: none; font-weight: bold; }
+        .logout-link:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>👋 Bienvenido, <?php echo $nombre_usuario; ?></h1> 
+    </div>
+    <div class="content">
+        <p><strong>Mensaje del Sistema:</strong> <?php echo $mensaje_bienvenida; ?></p> 
+        <p><strong>Hora actual del servidor:</strong> <?php echo $hora_actual; ?></p> 
+        
+        <hr>
+        
+        <a href="logout.php" class="logout-link">🚪 Cerrar Sesión</a>
+    </div>
+</body>
+</html>
